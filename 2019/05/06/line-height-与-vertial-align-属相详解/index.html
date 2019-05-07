@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="CSS,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="写在前面本文摘自 &amp;laquo;CSS 世界&amp;raquo;(附加部分个人见解)">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="line-height 属相详解">
+<meta property="og:url" content="http://yoursite.com/2019/05/06/line-height-与-vertial-align-属相详解/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="写在前面本文摘自 &amp;laquo;CSS 世界&amp;raquo;(附加部分个人见解)">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/images/1-1.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-2.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-3.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-4.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-5.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-6.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-7.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-8.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-9.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-11.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-12.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-14.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-10.jpg">
+<meta property="og:image" content="http://yoursite.com/images/1-13.jpg">
+<meta property="og:updated_time" content="2019-05-07T16:30:13.557Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="line-height 属相详解">
+<meta name="twitter:description" content="写在前面本文摘自 &amp;laquo;CSS 世界&amp;raquo;(附加部分个人见解)">
+<meta name="twitter:image" content="http://yoursite.com/images/1-1.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/05/06/line-height-与-vertial-align-属相详解/">
+
+
+
+
+
+  <title>line-height 属相详解 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/06/line-height-与-vertial-align-属相详解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">line-height 属相详解</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-06T22:14:20+08:00">
+                2019-05-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本文摘自 &laquo;CSS 世界&raquo;(附加部分个人见解)<br><a id="more"></a></p>
+<h2 id="内联元素"><a href="#内联元素" class="headerlink" title="内联元素"></a>内联元素</h2><p>理解 line-height 和 vertial-align 之前需要了解下内联元素。</p>
+<h3 id="哪些元素是内联元素"><a href="#哪些元素是内联元素" class="headerlink" title="哪些元素是内联元素"></a>哪些元素是内联元素</h3><ol>
+<li>从定义看<br>首先要明白这一点：“内联元素”的“内联”特指“外在盒子”，和“display 为 inline的元素”不是一个概念！inline-block 和 inline-table 都是“内联元素”，因为它们的“外在盒子”都是内联盒子。自然 display:inline 的元素也是“内联元素”，那么，<code>&lt;button&gt;</code>按钮元素是内联元素，因为其 display 默认值是 inline-block；<code>&lt;img&gt;</code>图片元素也是内联 display 默认值是 inline 等。</li>
+<li>从表现看<br>就行为表现来看，“内联元素”的典型特征就是可以和文字在一行显示。因此，文字是内联元素，图片是内联元素，按钮是内联元素，输入框、下拉框等原生表单控件也是内联元素。下面有一个疑问：浮动元素貌似也是可以和文字在一个水平上显示的，是不是浮动元素也是内联级别的呢？不是的。实际上，浮动元素和后面的文字并不在一行显示，浮动元素已经在文档流之外了。证据就是，当后面文字足够多的时候，文字并不是在浮动元素的下面，而是继续在后面。这就说明，浮动元素和后面文字不在一行，只是它们恰好站在了一起而已。真相是，浮动元素会生成“块盒子”，这就是后话了。</li>
+</ol>
+<h3 id="内联世界深入的基础—内联盒模型"><a href="#内联世界深入的基础—内联盒模型" class="headerlink" title="内联世界深入的基础—内联盒模型"></a>内联世界深入的基础—内联盒模型</h3><p>下面是一段很普通的 HTML：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;这是一行普通的文字，这里有个 &lt;em&gt;em&lt;/em&gt; 标签。&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>看似普通，实际上包含了很多术语和概念，或者换种通俗的说法，包含了很多种盒子。我归结为下面这些盒子。<br>（1）内容区域（content area）。内容区域指一种围绕文字看不见的盒子，其大小仅受字符本身特性控制，本质上是一个字符盒子（character box）；但是有些元素，如图片这样的替换元素，其内容显然不是文字，不存在字符盒子之类的，因此，对于这些元素，内容区域可以看成元素自身。定义上说内容区域是“看不见的”，这对理解“内容区域”是不利的，好在根据我多年的理解与实践，我们可以把文本选中的背景色区域作为内容区域，例如，如下图所示。<br><img src="/images/1-1.jpg" alt="内容区域示意"><br>&emsp;&emsp;这对于解释各种内联相关的行为都非常可行，文本选中区本质上就等同于基本盒尺寸中的content box，都是 content，语义上也说得通。实际上，内容区域并没有明确的定义，所以将其理解为 em 盒（em-box，可看成是中文字符占据的 1 em 高度区域）也是可以的，但是在本文中，为了方便演示和讲解，将其全部理解为文本选中的区域。<br>&emsp;&emsp;在 IE 和 Firefox 浏览器下，文字的选中背景总能准确反映内容区域范围，但是 Chrome 浏览器下，::selection 范围并不总是准确的，例如，和图片混排或者有垂直 padding 的时候，范围会明显过大，这一点需要注意。后面行高等章节会利用此选中背景帮助我们理解。</p>
+<p>（2）内联盒子（inline box）。“内联盒子”不会让内容成块显示，而是排成一行，这里的“内联盒子”实际指的就是元素的“外在盒子”，用来决定元素是内联还是块级。该盒子又可以细分为“内联盒子”和“匿名内联盒子”两类：<br><img src="/images/1-2.jpg" alt="内联盒子示意"><br>&emsp;&emsp;如果外部含内联标签（<code>&lt;span&gt;</code>、<code>&lt;a&gt;</code>和<code>&lt;em&gt;</code>等），则属于“内联盒子”（实线框标注）；如果是个光秃秃的文字，则属于“匿名内联盒子”（虚线框标注）。需要注意的是，并不是所有光秃秃的文字都是“匿名内联盒子”，其还有可能是“匿名块级盒子”，关键要看前后的标签是内联还是块级。<br>（3）行框盒子（line box）。例如：<br><img src="/images/1-3.jpg" alt="行框盒子示意"><br>每一行就是一个“行框盒子”（实线框标注），每个“行框盒子”又是由一个一个“内联盒子”组成的。<br>（4）包含盒子（containing box）。例如：<br><img src="/images/1-4.jpg" alt="包含盒子示意"><br><code>&lt;p&gt;</code>标签就是一个“包含盒子”（实线框标注），此盒子由一行一行的“行框盒子”组成。</p>
+<h3 id="幽灵空白节点"><a href="#幽灵空白节点" class="headerlink" title="幽灵空白节点"></a>幽灵空白节点</h3><p>“幽灵空白节点”是内联盒模型中非常重要的一个概念，具体指的是：在 HTML5 文档声明中，内联元素的所有解析和渲染表现就如同每个行框盒子的前面有一个“空白节点”一样。这个“空白节点”永远透明，不占据任何宽度，看不见也无法通过脚本获取，就好像幽灵一样，但又确确实实地存在，表现如同文本节点一样，因此，我称之为“幽灵空白节点”。注意，这里有一个前提，文档声明必须是 HTML5 文档声明（HTML 代码如下），如果还是很多年前的老声明，则不存在“幽灵空白节点”。我们可以举一个最简单的例子证明“幽灵空白节点”确实存在， CSS 和 HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">div &#123;</span><br><span class="line"> background-color: #cd0000;</span><br><span class="line">&#125;</span><br><span class="line">span &#123;</span><br><span class="line"> display: inline-block;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>  结果，此<code>&lt;div&gt;</code>的高度并不是 0，而是如图所示有高度。这着实很奇怪，内部的<code>&lt;span&gt;</code>元素的宽高明明都是 0，标签之间也没有换行符之类的嫌疑，怎么<code>&lt;div&gt;</code>的高度会是图3-29 中所示的 18 像素呢？<br><img src="/images/1-5.jpg" alt="幽灵空白节点示意"><br>  当然，为何高度是 18 像素这里三言两语是解释不清的，可以看后面对 line-height 和vertical-align 的深入讲解，这里只是为了证明“幽灵空白节点”确实是存在的。虽然说“幽灵空白节点”是我自己根据 CSS 的特性表现起的一个非常形象的名字，但其绝不是空中楼阁、信口胡诌的。规范中实际上对这个“幽灵空白节点”是有提及的，“幽灵空白节点”实际上也是一个盒子，不过是个假想盒，名叫“strut”，中文直译为“支柱”，是一个存在于每个“行框盒子”前面，同时具有该元素的字体和行高属性的 0 宽度的内联盒。   </p>
+<h3 id="内联元素的高度之本-line-height"><a href="#内联元素的高度之本-line-height" class="headerlink" title="内联元素的高度之本 line-height"></a>内联元素的高度之本 line-height</h3><p>先思考下面这个问题：默认空<code>&lt;div&gt;</code>高度是 0，但是一旦里面写上几个文字，<code>&lt;div&gt;</code>高度就有了，请问这个高度由何而来，或者说是由哪个 CSS 属性决定的？如果仅仅通过表象来确认，估计不少人会认为<code>&lt;div&gt;</code>高度是由里面的文字撑开的，也就是font-size 决定的，但本质上是是由 line-height 属性全权决定的，尽管某些场景确实与font-size 大小有关。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test1"</span>&gt;</span>我的高度是？<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">.test1 &#123;</span><br><span class="line"> font-size: 16px;</span><br><span class="line"> line-height: 0;</span><br><span class="line"> border: 1px solid #ccc;</span><br><span class="line"> background: #eee;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test2"</span>&gt;</span>我的高度是？<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">.test1 &#123;</span><br><span class="line"> font-size: 0;</span><br><span class="line"> line-height: 16px;</span><br><span class="line"> border: 1px solid #ccc;</span><br><span class="line"> background: #eee;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这两段代码的区别在于一个 line-height 行高为 0，一个 font-size 字号为 0。结果，第一段代码，最后元素的高度只剩下边框那么丁点儿，而后面一段代码，虽然文字小到都看不见了，但是 16px 的内部高度依然坚挺，如图所示。很显然，从上面这个例子可以看出，<code>&lt;div&gt;</code>高度是由行<br>高决定的，而非文字。<br><img src="/images/1-6.jpg" alt="文字高度本质上由行高决定"><br>&emsp;&emsp;下面要说一些很有意思的结论，对于非替换元素的纯内联元素，其可视高度完全由 line-height 决定。注意这里的措辞—“完全”，什么padding、border 属性对可视高度是没有任何影响的，这也是我们平常口中的“盒模型”约定俗成说的是块级元素的原因。<br>&emsp;&emsp;因此，对于文本这样的纯内联元素，line-height 就是高度计算的基石，用专业说法就是指定了用来计算行框盒子高度的基础高度。比方说，line-height 设为16px，则一行文字高度是 16px，两行就是 32px，三行就是 48px，所有浏览器渲染解析都是这个值，1 像素都不差。<br>&emsp;&emsp;那如果是替换元素，又或者是块级元素，line-height 在其中又扮演什么角色呢？<br>&emsp;&emsp;在回答这个问题之前，我们最好先把 line-height 作用于内联元素的细节给搞明白。通常，line-height 的高度作用细节都是使用“行距”和“半行距”来解释的。那么什么是“行距”，什么又是“半行距”呢？<br>&emsp;&emsp;我个人是这么认为的：内联元素的高度由固定高度和不固定高度组成，这个不固定的部分就是这里的“行距”。换句话说，line-height 之所以起作用，就是通过改变“行距”来实现的。<br>&emsp;&emsp;古人的印刷作品水平方向但是，水平方向，列与列之间却有着明显的间隙，这个间隙其实就是“行距”。所以，“行距”的作用是可以瞬间明确我们的阅读方向，让我们阅读文字更轻松。在 CSS 世界中，“行距”其实也是类似的东西，但还是有些差别的。以水平阅读流举例，传统印刷的“行距”是上下两行文字之间预留的间隙，是个独立的区域，也就意味着第一行文字的上方是没有“行距”的；但是在 CSS 中，“行距”分散在当前文字的上方和下方，也就是即使是第一行文字，其上方也是有“行距”的，只不过这个“行距”的高度仅仅是完整“行距”高度的一半，因此，也被称为“半行距”。<br>&emsp;&emsp;现在知道了 CSS 的“半行距”，那么哪里到哪里才是“半行距”的高度范围呢？一般业界的共识是：行距 = 行高− em-box。转换成 CSS 语言就是：行距 = line-height - font-size。其中 em-box 是 CSS 世界中比较虚的一个概念，说“虚”并不是胡编乱造的意思，而是我们无法有效感知这个盒子具体的位置在哪里，但是有一点可以明确，就是其高度正好就是 1em。em是一个相对 font-size 大小的 CSS 单位，因此 1em 等用于当前一个 font-size 大小，这就是“行距 = line-height - font-size”这个公式的由来。有了“行距”，我们一分为二，就有了“半行距”，分别加在 em-box 上面和下面就构成了文字的完整高度了。话虽这么讲，但一旦不弄清楚 em-box 究竟在什么位置，我们就无法在脑中形成关于行高的具象认知，知识很容易遗忘。<br>&emsp;&emsp;人很容易被肉眼所见的东西迷惑，因此，很多人会把文字图形区域看成是 em-box 范围，实际上这是不正确的，比方说，一些带尾的英文字符 q 或者 g，其小尾巴是在 em-box 范围之外的，而对于汉字，很多字体图形高度实际上要小于 em-box 高度的。<br>&emsp;&emsp;此时，就轮到内容区域（content area）出马了。在本书中，内容区域可以近似理解为 Firefox/IE浏览器下文本选中带背景色的区域。这么理解的重要原因之一就是可见，这对于我们深入理解内联元素知识非常有帮助。<br>&emsp;&emsp;大多数场景下，内容区域和 em-box 是不一样的，内容区域高度受 font-family 和font-size 双重影响，而 em-box 仅受 font-size 影响，通常内容区域高度要更高一些。除了下面这种情况，也就是“当我们的字体是宋体的时候，内容区域和 em-box 是等同的”，因为宋体是一种正统的印刷字体，方方正正，所以千万不要小看宋体。<br>&emsp;&emsp;于是，利用我们平常不待见的宋体，就能准确揪出“半行距”的藏身之所了，测试代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.test &#123;</span><br><span class="line"> font-family: simsun;</span><br><span class="line"> font-size: 24px;</span><br><span class="line"> line-height: 36px;</span><br><span class="line"> background-color: yellow;</span><br><span class="line">&#125;</span><br><span class="line">.test &gt; span &#123;</span><br><span class="line"> background-color: white;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">span</span>&gt;</span>sphinx<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>此时，平常虚无的 em-box 借助内容区域（图 5-8 中字符 sp 的选中区域）暴露出了庐山真面目，“半行距”也准确显现出来了<br><img src="/images/1-7.jpg" alt="半行间距"></p>
+<p>&emsp;&emsp;说完了内联元素，下面轮到替换元素和块级元素了。<br>&emsp;&emsp;关于替换元素的高度与 line-height 的关系首先需要弄明白这个问题：line-height可以影响替换元素（如图片的高度）吗？答案是，不可以！<br>&emsp;&emsp;可能有人会反驳了，不会呀，你看下面这个例子：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.box &#123;</span><br><span class="line"> line-height: 256px;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"1.jp</span></span></span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;不是的，不是 line-height 把图片占据高度变高了，而是把“幽灵空白节点”的高度变高了。图片为内联元素，会构成一个“行框盒子”，而在 HTML5 文档模式下，每一个“7行框盒子”的前面都有一个宽度为 0 的“幽灵空白节点”，其内联特性表现和普通字符一模一样，所以，这里的容器高度会等于 line-height 设置的属性值 256px。<br>&emsp;&emsp;实际开发的时候，图文和文字混在一起是很常见的，那这种内联替换元素和内联非替换元素在一起时的高度表现又是怎样的呢？<br>&emsp;&emsp;<strong>由于同属内联元素，因此，会共同形成一个“行框盒子”，line-height 在这个混合元素的“行框盒子”中扮演的角色是决定这个行盒的最小高度，听上去似乎有点儿尴尬，对于纯文本元素，line-height 非常威风，直接决定了最终的高度。但是，如果同时有替换元素，则line-height 的表现一下子弱了很多，只能决定最小高度，对最终的高度表现有望尘莫及之感。</strong>为什么会这样呢？一是替换元素的高度不受 line-height 影响，二是 vertical-align属性在背后作祟。对于这种混合替换元素的场景，line-height 要想一统江山，需要值足够大才行。但是，实际开发的时候，我们给 line-height 设置的值总是很中规中矩，于是，就会出现类似下面的场景：明明文字设置了 line-height 为 20px，但是，如果文字后面有小图标，最后“行框盒子”高度却是 21px 或是 22px。这种现象背后最大的黑手其实是 vertical-align 属性，我们会在下一章好好深入剖析为什么会有这样的表现。<br>&emsp;&emsp;<strong>对于块级元素，line-height 对其本身是没有任何作用的，我们平时改变 line-height，块级元素的高度跟着变化实际上是通过改变块级元素里面内联级别元素占据的高度实现的。</strong></p>
+<h3 id="为什么-line-height-可以让内联元素“垂直居中”"><a href="#为什么-line-height-可以让内联元素“垂直居中”" class="headerlink" title="为什么 line-height 可以让内联元素“垂直居中”"></a>为什么 line-height 可以让内联元素“垂直居中”</h3><p>坊间流传着这么一种说法：“要想让单行文字垂直居中，只要设置 line-height 大小和height 高度一样就可以了。从效果上看，似乎验证了这种说法的正确性。但是，实际上，上面的说法对 CSS 初学者会产生两个严重的误导，同时，语句本身也存在不严谨的地方！<br>&emsp;&emsp;误区之一：要让单行文字垂直居中，只需要 line-height 这一个属性就可以，与 height<br>一点儿关系都没有。也就是说，我们直接入下图写法就行了。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.title</span> &#123;</span><br><span class="line"> <span class="attribute">line-height</span>: <span class="number">24px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;误区二：行高控制文字垂直居中，不仅适用于单行，多行也是可以的。准确的说法应该是“line-height 可以让单行或多行元素近似垂直居中”。稍等，这里有个词似乎和上面的表述有点儿微妙的差异，“近似垂直居中”？没错，一定要加上“近似”二字，这样的说法才足够严谨。换句话说，我们通过 line-height 设置的垂直居中，并不是真正意义上的垂直居中！究竟是怎么一回事？<br>&emsp;&emsp;这里，其实要解答的是两个问题，一个是为何可以“垂直居中”，另一个是为何是“近似”。正如上一节所说的，没有什么理所当然，行高可以实现“垂直居中”原因在于 CSS 中“行距的上下等分机制”，如果行距的添加规则是在文字的上方或者下方，则行高是无法让文字垂直居中的。<br>说“近似”是因为文字字形的垂直中线位置普遍要比真正的“行框盒子”的垂直中线位置低，譬如我们拿现在用得比较多的微软雅黑字体举例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">p &#123;</span><br><span class="line"> font-size: 80px;</span><br><span class="line"> line-height: 120px;</span><br><span class="line"> background-color: #666;</span><br><span class="line"> font-family: &apos;microsoft yahei&apos;;</span><br><span class="line"> color: #fff;</span><br><span class="line">&#125;</span><br><span class="line">&lt;p&gt;微软雅黑&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>结果，我都不需要标注，肉眼就能看出字形明显偏下:<br><img src="/images/1-8.jpg" alt="line-height 与位置下沉的微软雅黑字体"><br>由于我们平时使用的 font-size 都比较小，12px～16px 很多，因此，虽然微软雅黑字体有下沉，但也就 1 像素的样子，所以我们往往觉察不到这种“垂直对齐”其实并不是真正意义上的垂直居中，只是感官上看上去像是垂直居中罢了。这也是我总是称line-height 实现的单行文本垂直居中为“近似垂直居中”的原因。<br>&emsp;&emsp;下面再来说说行高实现多行文本或者图片等替换元素的垂直居中效果实现。多行文本或者替换元素的垂直居中实现原理和单行文本就不一样了，需要 line-height属性的好朋友 vertical-align 属性帮助才可以，示例代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">.box &#123;</span><br><span class="line"> line-height: 120px;</span><br><span class="line"> background-color: #f0f3f9;</span><br><span class="line"> width: 300px;</span><br><span class="line">&#125;</span><br><span class="line">.content &#123;</span><br><span class="line"> display: inline-block;</span><br><span class="line"> line-height: 20px;</span><br><span class="line"> margin: 0 20px;</span><br><span class="line"> vertical-align: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span>基于行高实现的基于行高实现的基于行高实现的基于行高实现的...<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/1-9.jpg" alt="line-height 与多行文字垂直居中效果"><br>&emsp;&emsp;实现的原理大致如下。<br>&emsp;&emsp;（1）多行文字使用一个标签包裹，然后设置 display 为 inline-block。好处在于既能重置外部的 line-height 为正常的大小，又能保持内联元素特性，从而可以设置vertical-align 属性，以及产生一个非常关键的“行框盒子”。我们需要的其实并不是这个“行框盒子”，而是每个“行框盒子”都会附带的一个产物—“幽灵空白节点”，即一个宽度为0、表现如同普通字符的看不见的“节点”。有了这个“幽灵空白节点”，我们的 lineheight:120px就有了作用的对象，从而相当于在.content 元素前面撑起了一个高度为120px 的宽度为 0 的内联元素。<br>&emsp;&emsp;（2）因为内联元素默认都是基线对齐的，所以我们通过对.content 元素设置 verticalalign:middle来调整多行文本的垂直位置，从而实现我们想要的“垂直居中”效果。如果是要借助 line-height 实现图片垂直居中效果，也是类似的原理和做法。</p>
+<p>这里解释下：<br>（1）第一点，为什么要设置成 inline-block 如果 .content 不设置成 inline-block，就不会构成行框盒子了，而外层box本身是块元素，line-height 对它无用，所以整个 div 的高度取决于 .conent里面文字的 line-height了， 如下图：<br><img src="/images/1-11.jpg" alt="行高"></p>
+<p>这里还举另外要给例子:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.box &#123;</span><br><span class="line">    line-height: 120px;</span><br><span class="line">    background-color: #f0f3f9;</span><br><span class="line">    width: 300px;</span><br><span class="line">&#125;</span><br><span class="line">.content &#123;</span><br><span class="line">    line-height: 20px;</span><br><span class="line">&#125; </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span>基于行高实现的基于行高实现的基于行高实现的基于行高实现的...<span class="tag">&lt;/<span class="name">span</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/1-12.jpg" alt="行高"><br>为什么 span 的行高没有生效？ 而 .content 设置成 inline-block 就生效了呢？<br>因为同样这里形成了一个行框盒子，span 的高度实际取决于最小行高，而最小行高就是幽灵空白节点（strut）的行高。而改成 inline-block ,就会创建一个独立的“行框盒子”，这样<code>&lt;span&gt;</code>元素设置的line-height:20px 就可以生效了。或者改成 block</p>
+<p>这里还引用书中的另一个例子，书中解释的更加详细一些：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">.box &#123;</span><br><span class="line"> line-height: 96px;</span><br><span class="line">&#125;</span><br><span class="line">.box span &#123;</span><br><span class="line"> line-height: 20px;</span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">&lt;!--和--&gt;</span></span><br><span class="line">.box &#123;</span><br><span class="line"> line-height: 20px;</span><br><span class="line">&#125;</span><br><span class="line">.box span &#123;</span><br><span class="line"> line-height: 96px;</span><br><span class="line">&#125; </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">span</span>&gt;</span>内容...<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>.box 实际高度都为96px，为什么？<br>也就是说：无论内联元素 line-height 如何设置，最终父级元素的高度都是由数值大的那个 line-height 决定的，我称之为“内联元素 line-height 的大值特性”。<br>首先，要明确一点：内联元素是支持 line-height 的<code>&lt;span&gt;</code>元素上的 line-height 也确实覆盖了.box 元素，但是，在内联盒模型中，存在一些你看不到的东西，没错，就是多次提到的“幽灵空白节点”。<br>。这里的<code>&lt;span&gt;</code>是一个内联元素，因此自身是一个“内联盒子”，本例就这一个“内联盒子”，只要有“内联盒子”在，就<br>一定会有“行框盒子”，就是每一行内联元素外面包裹的一层看不见的盒子。然后，重点来了，在每个“行框盒子”前面有一个宽度为 0 的具有该元素的字体和行高属性的看不见的“幽灵空白节点”，如果套用本案，则这个“幽灵空白节点”就在<code>&lt;span&gt;</code>元素的前方，如图所示。<br><img src="/images/1-14.jpg" alt="行高"><br>于是，就效果而言，我们的 HTML 实际上等同于：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;box&quot;&gt;</span><br><span class="line"> 字符&lt;span&gt;内容...&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>这下就好理解了，当.box 元素设置 line-height:96px 时，“字符”高度 96px；当设置 line-height:20px 时，<code>&lt;span&gt;</code>元素的高度则变成了 96px，而行框盒子的高度是由高度最高的那个“内联盒子”决定的，这就是.box 元素高度永远都是最大的那个 line-height的原因。<br>知道了原因也就能够对症下药，要避免“幽灵空白节点”的干扰，例如，设置<code>&lt;span&gt;</code>元素 display:inline-block，创建一个独立的“行框盒子”，这样<code>&lt;span&gt;</code>元素设置的line-height:20px 就可以生效了，这也是多行文字垂直居中示例中这么设置的原因。</p>
+<p>（2）对于第二点，在设置 vertail-align 之前，.content 元素的基线默认是与该元素所在行的基线对齐的，如下图：<br><img src="/images/1-10.jpg" alt="行高"><br>而该元素所在行的基线在哪儿呢？这个基线就取决于那个幽灵空白节点的基线，但是.content 的基线在哪儿了呢，这个问题也就是问 inline-block 元素的基线在哪儿，这里我们来试验一下：<br><img src="/images/1-13.jpg" alt="行高"><br>这里可以明显的看出，inline-block 元素的基线就是其内部的最后一行行内元素的基线所在的位置。所以 .content 的基线就与幽灵空白节点的基线对齐了，然后用 vertail-align: middle 就可以使之居中对齐了。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/04/npm切换淘宝源/" rel="next" title="npm 切换淘宝源">
+                <i class="fa fa-chevron-left"></i> npm 切换淘宝源
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内联元素"><span class="nav-number">2.</span> <span class="nav-text">内联元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#哪些元素是内联元素"><span class="nav-number">2.1.</span> <span class="nav-text">哪些元素是内联元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内联世界深入的基础—内联盒模型"><span class="nav-number">2.2.</span> <span class="nav-text">内联世界深入的基础—内联盒模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#幽灵空白节点"><span class="nav-number">2.3.</span> <span class="nav-text">幽灵空白节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内联元素的高度之本-line-height"><span class="nav-number">2.4.</span> <span class="nav-text">内联元素的高度之本 line-height</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么-line-height-可以让内联元素“垂直居中”"><span class="nav-number">2.5.</span> <span class="nav-text">为什么 line-height 可以让内联元素“垂直居中”</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
